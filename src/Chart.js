@@ -85,7 +85,6 @@ const Chart = () => {
       .get("http://68.183.176.100:8001/api/v1/history")
       // .get("http://localhost:8001/api/v1/history")
       .then((res) => {
-        console.log(res.data.data.audArr.length);
         lineSeriesAud.setData(res.data.data.audArr);
         lineSeriesCad.setData(res.data.data.cadArr);
         lineSeriesChf.setData(res.data.data.chfArr);
